@@ -1,0 +1,40 @@
+$font-family: Arial, Helvetica, sans-serif;
+
+$font-size-large: clamp(3rem, 4vw, 5rem);
+$font-size-medium: clamp(2rem, 3vw, 4rem);
+$font-size-small: clamp(1rem, 2vw, 3rem);
+
+$color-link: white;
+$color-link-hover: red;
+
+$themes: (
+  light: (
+    text: red,
+  ),
+  dark: (
+    text: black,
+  ),
+);
+
+@mixin themed() {
+  @each $theme, $map in $themes {
+    .theme--#{$theme} & {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), "#{$key}");
+        $theme-map: map-merge(
+          $theme-map,
+          (
+            $key: $value,
+          )
+        ) !global;
+      }
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+@function t($key) {
+  @return map-get($theme-map, $key);
+}

@@ -1,0 +1,26 @@
+.nav {
+  background-color: lightblue;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    list-style: none;
+    padding: 3rem;
+  }
+
+  &__item {
+  }
+
+  &__link {
+    font-size: $font-size-small;
+
+    @include themed() {
+      color: t(text);
+    }
+
+    &:hover {
+      color: $color-link-hover;
+    }
+  }
+}
