@@ -7,90 +7,109 @@
     <title>Ivan Bakotin</title>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="#about">About</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#projects">Projects</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#contact">Contact</a>
+        </li>
       </ul>
     </nav>
-    <main>
-      <section id="about">
-        <header>
-          <h1>Ivan Bakotin</h1>
+    <main class="main">
+      <section class="about" id="about">
+        <header class="about__header">
+          <h1 class="about__title">Ivan Bakotin</h1>
         </header>
-        <p>I am creating websites and web applications.</p>
+        <p class="about__paragraph">
+          I am creating websites and web applications.
+        </p>
       </section>
-      <section id="projects">
-        <header>
-          <h2>Projects</h2>
+      <section class="projects" id="projects">
+        <header class="projects__header">
+          <h2 class="projects__title">Projects</h2>
         </header>
-        <div>
-          <ul>
-            <li>
-              <h3>Socket Games</h3>
-              <img src="" alt="" />
-              <p>
-                Web Application where users can host a lobby, kick, mute players
-                or chat with them. Through the lobby you can play games in real
-                time.
-              </p>
-            </li>
-            <li>
-              <h3>Online Form Creator</h3>
-              <img src="" alt="" />
-              <p>
-                Web Application where users can create forms and then send them
-                out by links to other people to solve.
-              </p>
-            </li>
-            <li>
-              <h3>ESN-Attendance</h3>
-              <img src="" alt="" />
-              <p>
-                Web Application built for ESN-Split to track its members, events
-                and member attendance on these events.
-              </p>
-            </li>
-            <li>
-              <h3>Social Media Site</h3>
-              <img src="" alt="" />
-              <p>
-                Web Application where users can create posts, comment, upvote
-                and downvote those posts. They can also chat with other users
-                through the use of sockets.
-              </p>
-            </li>
-            <li>
-              <h3>ChatApp Landing Page</h3>
-              <img src="" alt="" />
-              <p>
-                Landing page for a ChatApp Product. Design from FrontendMentor.
-              </p>
-            </li>
-            <li>
-              <h3>Job Listing Website</h3>
-              <img src="" alt="" />
-              <p>
-                Job listing website with a filter function. Design from
-                FrontendMentor.
-              </p>
-            </li>
-            <li>
-              <h3>Health Clinic Landing Page</h3>
-              <img src="" alt="" />
-              <p>Landing page for a fake health clinic.</p>
-            </li>
-          </ul>
-        </div>
+        <ul class="projects__list">
+          <li class="projects__item">
+            <h3 class="projects__item__title">Socket Games</h3>
+            <img class="projects__item__image" src="" alt="" />
+            <p class="projects__item__paragraph">
+              Web Application where users can host a lobby, kick, mute players
+              or chat with them. Through the lobby you can play games in real
+              time.
+            </p>
+          </li>
+          <li class="projects__item">
+            <h3 class="projects__item__title">Online Form Creator</h3>
+            <img class="projects__item__image" src="" alt="" />
+            <p class="projects__item__paragraph">
+              Web Application where users can create forms and then send them
+              out by links to other people to solve.
+            </p>
+          </li>
+          <li class="projects__item">
+            <h3 class="projects__item__title">ESN-Attendance</h3>
+            <img class="projects__item__image" src="" alt="" />
+            <p class="projects__item__paragraph">
+              Web Application built for ESN-Split to track its members, events
+              and member attendance on these events.
+            </p>
+          </li>
+          <li class="projects__item">
+            <h3 class="projects__item__title">Social Media Site</h3>
+            <img class="projects__item__image" src="" alt="" />
+            <p class="projects__item__paragraph">
+              Web Application where users can create posts, comment, upvote and
+              downvote those posts. They can also chat with other users through
+              the use of sockets.
+            </p>
+          </li>
+          <li class="projects__item">
+            <h3 class="projects__item__title">ChatApp Landing Page</h3>
+            <img class="projects__item__image" src="" alt="" />
+            <p class="projects__item__paragraph">
+              Landing page for a ChatApp Product. Design from FrontendMentor.
+            </p>
+          </li>
+          <li class="projects__item">
+            <h3 class="projects__item__title">Job Listing Page</h3>
+            <img class="projects__item__image" src="" alt="" />
+            <p class="projects__item__paragraph">
+              Job listing website with a filter function. Design from
+              FrontendMentor.
+            </p>
+          </li>
+          <li class="projects__item">
+            <h3 class="projects__item__title">Health Clinic Page</h3>
+            <img class="projects__item__image" src="" alt="" />
+            <p class="projects__item__paragraph"></p>
+          </li>
+          <li class="projects__item">
+            <h3 class="projects__item__title">Pomodoro App</h3>
+            <img class="projects__item__image" src="" alt="" />
+            <p class="projects__item__paragraph"></p>
+          </li>
+        </ul>
       </section>
-      <section id="contact">
-        <header>
-          <h2>Contact</h2>
+      <section class="contact" id="contact">
+        <header class="contact__header">
+          <h2 class="contact__title">Contact</h2>
         </header>
-        <ul>
-          <li><a href="https://github.com/ivanbakotin">Github</a></li>
-          <li><a href="mailto:ivan.bakotin1999@gmail.com">Email</a></li>
+        <ul class="contact__list">
+          <li class="contact__item">
+            <a class="contact__link" href="https://github.com/ivanbakotin"
+              >Github</a
+            >
+          </li>
+          <li class="contact__item">
+            <a class="contact__link" href="mailto:ivan.bakotin1999@gmail.com"
+              >Email</a
+            >
+          </li>
         </ul>
       </section>
     </main>
