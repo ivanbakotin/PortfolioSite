@@ -1,0 +1,41 @@
+.theme {
+  &-slider {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  &-checkbox + &-slider::before {
+    content: "";
+    background-color: lightcoral;
+    height: 3rem;
+    width: 9rem;
+    border-radius: 2rem;
+  }
+
+  &-checkbox + &-slider::after {
+    position: absolute;
+    content: "";
+    background-color: red;
+    height: 2.5rem;
+    width: 2.5rem;
+    left: 0.5rem;
+    border-radius: 50%;
+    transition: left 0.3s linear;
+  }
+
+  &-checkbox:checked + &-slider::before {
+    background-color: lightgreen;
+  }
+
+  &-checkbox:checked + &-slider::after {
+    left: 6rem;
+    background-color: green;
+  }
+
+  &-checkbox {
+    opacity: 0;
+    position: absolute;
+    left: -99999px;
+  }
+}

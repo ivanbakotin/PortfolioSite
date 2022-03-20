@@ -1,5 +1,11 @@
 .nav {
-  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include themed() {
+    background-color: t(bg-nav);
+  }
 
   &__list {
     display: flex;
@@ -9,18 +15,22 @@
     padding: 3rem;
   }
 
-  &__item {
-  }
-
   &__link {
     font-size: $font-size-small;
+    position: relative;
+    text-decoration: none;
 
     @include themed() {
-      color: t(text);
+      color: t(color-link);
     }
 
-    &:hover {
-      color: $color-link-hover;
+    &:hover::after {
+      content: "";
+      position: absolute;
+      display: block;
+      border-bottom: solid 0.3rem white;
+      width: 50%;
+      transform: translateX(50%);
     }
   }
 }

@@ -4,15 +4,16 @@ $font-size-large: clamp(3rem, 4vw, 5rem);
 $font-size-medium: clamp(2rem, 3vw, 4rem);
 $font-size-small: clamp(1rem, 2vw, 3rem);
 
-$color-link: white;
-$color-link-hover: red;
-
 $themes: (
   light: (
-    text: red,
+    color-text: rgb(189, 170, 170),
+    color-link: white,
+    bg-nav: rgb(21, 201, 201),
   ),
   dark: (
-    text: black,
+    color-text: black,
+    color-link: black,
+    bg-nav: rgb(46, 46, 49),
   ),
 );
 
