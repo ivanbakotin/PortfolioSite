@@ -83,6 +83,7 @@ img {
   font-size: clamp(2.5rem, 3vw, 3.5rem);
 }
 .about__paragraph {
+  line-height: 1.2;
   letter-spacing: 1px;
   font-size: clamp(1rem, 2vw, 2rem);
 }
@@ -90,16 +91,25 @@ img {
 .projects {
   display: flex;
   flex-direction: column;
-  background-color: #555252;
+  padding: 5rem;
+}
+.theme--light .projects {
+  background-color: #171818;
+}
+.theme--dark .projects {
+  background-color: #2e2e31;
 }
 .projects__title {
+  letter-spacing: 3px;
+  border-bottom: 2px solid white;
+  padding-bottom: 3rem;
   font-size: clamp(2.5rem, 3vw, 3.5rem);
 }
 .theme--light .projects__title {
-  color: #171818;
+  color: #fbfbfb;
 }
 .theme--dark .projects__title {
-  color: #2e2e31;
+  color: black;
 }
 .projects__list {
   display: flex;
@@ -107,7 +117,6 @@ img {
   align-items: center;
   align-self: center;
   list-style: none;
-  border-right: solid black 2px;
 }
 .projects__item {
   background-color: #44413d;
@@ -117,22 +126,25 @@ img {
   height: max-content;
 }
 .projects__item__title {
+  letter-spacing: 1px;
   font-size: clamp(2rem, 3vw, 3rem);
 }
 .theme--light .projects__item__title {
-  color: #171818;
+  color: #fbfbfb;
 }
 .theme--dark .projects__item__title {
-  color: #2e2e31;
+  color: black;
 }
 .projects__item__paragraph {
+  line-height: 1.2;
+  letter-spacing: 1px;
   font-size: clamp(1rem, 2vw, 2rem);
 }
 .theme--light .projects__item__paragraph {
-  color: #171818;
+  color: #fbfbfb;
 }
 .theme--dark .projects__item__paragraph {
-  color: #2e2e31;
+  color: black;
 }
 
 .theme-slider {

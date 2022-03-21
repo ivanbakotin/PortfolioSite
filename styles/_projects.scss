@@ -1,12 +1,18 @@
 .projects {
   display: flex;
   flex-direction: column;
-  background-color: rgb(85, 82, 82);
+  @include themed() {
+    background-color: t(bg-nav);
+  }
+  padding: 5rem;
 
   &__title {
+    letter-spacing: 3px;
+    border-bottom: 2px solid white;
+    padding-bottom: 3rem;
     font-size: $font-size-large;
     @include themed() {
-      color: t(bg-nav);
+      color: t(color-text);
     }
   }
 
@@ -16,7 +22,6 @@
     align-items: center;
     align-self: center;
     list-style: none;
-    border-right: solid black 2px;
   }
 
   &__item {
@@ -28,16 +33,19 @@
     }
 
     &__title {
+      letter-spacing: 1px;
       font-size: $font-size-medium;
       @include themed() {
-        color: t(bg-nav);
+        color: t(color-text);
       }
     }
 
     &__paragraph {
+      line-height: 1.2;
+      letter-spacing: 1px;
       font-size: $font-size-small;
       @include themed() {
-        color: t(bg-nav);
+        color: t(color-text);
       }
     }
   }
