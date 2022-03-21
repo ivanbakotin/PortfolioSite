@@ -91,6 +91,7 @@ img {
 .projects {
   display: flex;
   flex-direction: column;
+  padding-bottom: 5rem;
 }
 .theme--light .projects {
   background-color: #171818;
@@ -128,6 +129,21 @@ img {
   height: -moz-max-content;
   height: max-content;
 }
+.projects__item__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  padding: 1rem;
+}
+.projects__item__list__tech {
+  font-size: clamp(1rem, 2vw, 2rem);
+  border-radius: 1rem;
+  background-color: black;
+  letter-spacing: 1px;
+  color: white;
+  padding: 0.5rem;
+}
 .projects__item__title {
   text-align: center;
   letter-spacing: 1px;
@@ -140,7 +156,7 @@ img {
   color: black;
 }
 .projects__item__paragraph {
-  padding: 2rem;
+  padding: 1rem;
   line-height: 1.2;
   letter-spacing: 1px;
   font-size: clamp(1rem, 2vw, 2rem);
@@ -149,6 +165,36 @@ img {
   color: #fbfbfb;
 }
 .theme--dark .projects__item__paragraph {
+  color: black;
+}
+.projects__item__link {
+  font-size: clamp(1rem, 2vw, 2rem);
+  color: white;
+  padding: 1rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 5rem;
+  padding-bottom: 10rem;
+}
+.contact__title {
+  padding-bottom: 2rem;
+  font-size: clamp(2.5rem, 3vw, 3.5rem);
+  border-bottom: 2px solid black;
+}
+.contact__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8rem;
+  list-style: none;
+  text-align: center;
+}
+.contact__link {
+  font-size: clamp(2rem, 3vw, 3rem);
   color: black;
 }
 

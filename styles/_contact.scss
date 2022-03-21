@@ -1,0 +1,27 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 5rem;
+  padding-bottom: 10rem;
+
+  &__title {
+    padding-bottom: 2rem;
+    font-size: $font-size-large;
+    border-bottom: 2px solid black;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8rem;
+    list-style: none;
+    text-align: center;
+  }
+
+  &__link {
+    font-size: $font-size-medium;
+    color: black;
+  }
+}

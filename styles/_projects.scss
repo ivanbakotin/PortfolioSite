@@ -1,6 +1,7 @@
 .projects {
   display: flex;
   flex-direction: column;
+  padding-bottom: 5rem;
   @include themed() {
     background-color: t(bg-nav);
   }
@@ -32,6 +33,23 @@
     width: min(60rem, 80%);
     height: max-content;
 
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      list-style: none;
+      padding: 1rem;
+
+      &__tech {
+        font-size: $font-size-small;
+        border-radius: 1rem;
+        background-color: black;
+        letter-spacing: 1px;
+        color: white;
+        padding: 0.5rem;
+      }
+    }
+
     &__title {
       text-align: center;
       letter-spacing: 1px;
@@ -42,13 +60,19 @@
     }
 
     &__paragraph {
-      padding: 2rem;
+      padding: 1rem;
       line-height: 1.2;
       letter-spacing: 1px;
       font-size: $font-size-small;
       @include themed() {
         color: t(color-text);
       }
+    }
+
+    &__link {
+      font-size: $font-size-small;
+      color: white;
+      padding: 1rem;
     }
   }
 }
