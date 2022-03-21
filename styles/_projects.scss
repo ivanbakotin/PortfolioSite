@@ -4,9 +4,9 @@
   @include themed() {
     background-color: t(bg-nav);
   }
-  padding: 5rem;
 
   &__title {
+    margin: 5rem;
     letter-spacing: 3px;
     border-bottom: 2px solid white;
     padding-bottom: 3rem;
@@ -17,22 +17,23 @@
   }
 
   &__list {
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     align-self: center;
     list-style: none;
+    gap: 5rem;
   }
 
   &__item {
     background-color: rgb(68, 65, 61);
-    width: 30rem;
+    border-radius: 1rem;
+    width: min(60rem, 80%);
     height: max-content;
 
-    &__image {
-    }
-
     &__title {
+      text-align: center;
       letter-spacing: 1px;
       font-size: $font-size-medium;
       @include themed() {
@@ -41,6 +42,7 @@
     }
 
     &__paragraph {
+      padding: 2rem;
       line-height: 1.2;
       letter-spacing: 1px;
       font-size: $font-size-small;
