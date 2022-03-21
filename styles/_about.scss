@@ -1,20 +1,29 @@
 .about {
   display: flex;
+  padding: 5rem;
   flex-direction: column;
-  background-color: rgb(10, 10, 10);
+
+  @include themed() {
+    background-color: t(bg-about);
+  }
 
   &__header {
+    width: 70%;
+    border-bottom: 3px solid black;
   }
 
   &__title {
-    font-size: $font-size-large;
+    letter-spacing: 1px;
+    font-size: $font-size-very-large;
   }
 
   &__subtitle {
+    letter-spacing: 1px;
     font-size: $font-size-large;
   }
 
   &__paragraph {
+    letter-spacing: 1px;
     font-size: $font-size-small;
   }
 }

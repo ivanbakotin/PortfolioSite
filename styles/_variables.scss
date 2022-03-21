@@ -1,6 +1,7 @@
 $font-family: Arial, Helvetica, sans-serif;
 
-$font-size-large: clamp(3rem, 4vw, 4rem);
+$font-size-very-large: clamp(3rem, 4vw, 4rem);
+$font-size-large: clamp(2.5rem, 3vw, 3.5rem);
 $font-size-medium: clamp(2rem, 3vw, 3rem);
 $font-size-small: clamp(1rem, 2vw, 2rem);
 
@@ -11,6 +12,7 @@ $themes: (
     bg-nav: rgb(23, 24, 24),
     slider-bg: white,
     slider: gray,
+    bg-about: white,
   ),
   dark: (
     color-text: black,
