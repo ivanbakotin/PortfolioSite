@@ -128,6 +128,7 @@ img {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+  padding-bottom: 2rem;
 }
 .projects__item__list {
   display: flex;
@@ -187,13 +188,12 @@ img {
 }
 .contact__list {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   gap: 8rem;
   list-style: none;
-  text-align: center;
 }
 .contact__link {
+  word-break: break-all;
   font-size: clamp(2rem, 3vw, 3rem);
   color: black;
 }

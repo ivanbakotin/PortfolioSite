@@ -13,14 +13,13 @@
 
   &__list {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     gap: 8rem;
     list-style: none;
-    text-align: center;
   }
 
   &__link {
+    word-break: break-all;
     font-size: $font-size-medium;
     color: black;
   }
