@@ -1,11 +1,20 @@
 .about {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(10, 10, 10);
+
   &__header {
   }
+
   &__title {
     font-size: $font-size-large;
   }
 
   &__subtitle {
     font-size: $font-size-large;
+  }
+
+  &__paragraph {
+    font-size: $font-size-small;
   }
 }

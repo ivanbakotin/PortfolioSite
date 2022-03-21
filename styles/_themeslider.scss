@@ -7,30 +7,36 @@
 
   &-checkbox + &-slider::before {
     content: "";
-    background-color: lightcoral;
+    @include themed() {
+      background-color: t(slider-bg);
+    }
     height: 3rem;
-    width: 9rem;
-    border-radius: 2rem;
+    width: 8rem;
   }
 
   &-checkbox + &-slider::after {
     position: absolute;
     content: "";
-    background-color: red;
+    @include themed() {
+      background-color: t(slider);
+    }
     height: 2.5rem;
     width: 2.5rem;
     left: 0.5rem;
-    border-radius: 50%;
-    transition: left 0.3s linear;
+    transition: left 0.2s linear;
   }
 
   &-checkbox:checked + &-slider::before {
-    background-color: lightgreen;
+    @include themed() {
+      background-color: t(slider-bg);
+    }
   }
 
   &-checkbox:checked + &-slider::after {
-    left: 6rem;
-    background-color: green;
+    left: 5rem;
+    @include themed() {
+      background-color: t(slider);
+    }
   }
 
   &-checkbox {

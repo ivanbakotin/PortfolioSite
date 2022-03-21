@@ -1,6 +1,6 @@
 .nav {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 
   @include themed() {
@@ -9,7 +9,7 @@
 
   &__list {
     display: flex;
-    justify-content: center;
+    align-items: center;
     gap: 5rem;
     list-style: none;
     padding: 3rem;
