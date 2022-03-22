@@ -18,12 +18,10 @@
   }
 
   &__list {
-    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     align-self: center;
-    list-style: none;
     gap: 5rem;
     overflow-x: hidden;
   }
@@ -42,7 +40,6 @@
       display: flex;
       flex-wrap: wrap;
       gap: 1rem;
-      list-style: none;
       padding: 1rem;
 
       &__tech {
@@ -67,7 +64,6 @@
       line-height: 1.5;
       letter-spacing: 1px;
       font-size: $font-size-small;
-
       border-bottom: 1px solid white;
       color: white;
     }

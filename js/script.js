@@ -9,6 +9,20 @@ themeSlider.addEventListener("click", () => {
   }
 });
 
+const burger = document.querySelector(".nav__burger");
+const navItems = document.querySelectorAll(".nav__item");
+const nav = document.querySelector(".nav");
+
+navItems.forEach((navItem) => {
+  navItem.addEventListener("click", () => {
+    nav.classList.toggle("show");
+  });
+});
+
+burger.addEventListener("click", () => {
+  nav.classList.toggle("show");
+});
+
 const projects = document.querySelectorAll(".projects__item");
 
 const observer = new IntersectionObserver(
