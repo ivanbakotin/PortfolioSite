@@ -8,3 +8,24 @@ themeSlider.addEventListener("click", () => {
     body.className = "theme--light";
   }
 });
+
+const projects = document.querySelectorAll(".projects__item");
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList += " show";
+        observer.unobserve(entry.target);
+      }
+    });
+    console.log(entries);
+  },
+  {
+    threshold: 0.4,
+  }
+);
+
+projects.forEach((project) => {
+  observer.observe(project);
+});

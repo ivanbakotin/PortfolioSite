@@ -33,6 +33,9 @@
     width: min(60rem, 80%);
     height: max-content;
     padding-bottom: 2rem;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 0.3s linear, transform 0.3s linear;
 
     &__list {
       display: flex;
@@ -62,7 +65,7 @@
 
     &__paragraph {
       padding: 1rem;
-      line-height: 1.2;
+      line-height: 1.5;
       letter-spacing: 1px;
       font-size: $font-size-small;
       @include themed() {
@@ -77,5 +80,10 @@
       }
       padding: 1rem;
     }
+  }
+
+  .show {
+    opacity: 1;
+    transform: translateX(0%);
   }
 }

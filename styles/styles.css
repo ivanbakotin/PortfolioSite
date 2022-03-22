@@ -162,6 +162,9 @@ img {
   height: -moz-max-content;
   height: max-content;
   padding-bottom: 2rem;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 0.3s linear, transform 0.3s linear;
 }
 .projects__item__list {
   display: flex;
@@ -191,7 +194,7 @@ img {
 }
 .projects__item__paragraph {
   padding: 1rem;
-  line-height: 1.2;
+  line-height: 1.5;
   letter-spacing: 1px;
   font-size: clamp(1rem, 2vw, 2rem);
 }
@@ -210,6 +213,10 @@ img {
 }
 .theme--light .projects__item__link {
   color: #171818;
+}
+.projects .show {
+  opacity: 1;
+  transform: translateX(0%);
 }
 
 .contact {
