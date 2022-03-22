@@ -7,18 +7,19 @@ $font-size-small: clamp(1rem, 2vw, 2rem);
 
 $themes: (
   light: (
-    color-text: rgb(251, 251, 251),
+    color-text: rgb(23, 24, 24),
     color-link: white,
     bg-nav: rgb(23, 24, 24),
+    bg-about: white,
     slider-bg: white,
     slider: gray,
-    bg-about: white,
   ),
   dark: (
-    color-text: black,
-    color-link: black,
-    bg-nav: rgb(46, 46, 49),
-    slider-bg: white,
+    color-text: white,
+    color-link: rgb(23, 24, 24),
+    bg-nav: white,
+    bg-about: rgb(23, 24, 24),
+    slider-bg: rgb(23, 24, 24),
     slider: gray,
   ),
 );

@@ -8,23 +8,33 @@
   }
 
   &__header {
-    width: 70%;
-    border-bottom: 3px solid black;
+    @include themed() {
+      border-bottom: 3px solid t(color-text);
+    }
   }
 
   &__title {
     letter-spacing: 1px;
     font-size: $font-size-very-large;
+    @include themed() {
+      color: t(color-text);
+    }
   }
 
   &__subtitle {
     letter-spacing: 1px;
     font-size: $font-size-large;
+    @include themed() {
+      color: t(color-text);
+    }
   }
 
   &__paragraph {
     line-height: 1.2;
     letter-spacing: 1px;
     font-size: $font-size-small;
+    @include themed() {
+      color: t(color-text);
+    }
   }
 }
