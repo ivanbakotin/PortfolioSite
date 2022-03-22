@@ -11,6 +11,7 @@
     @include themed() {
       border-bottom: 3px solid t(color-text);
     }
+    margin-bottom: 2rem;
   }
 
   &__title {
