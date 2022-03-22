@@ -25,6 +25,7 @@
     align-self: center;
     list-style: none;
     gap: 5rem;
+    overflow-x: hidden;
   }
 
   &__item {
@@ -58,9 +59,7 @@
       text-align: center;
       letter-spacing: 1px;
       font-size: $font-size-medium;
-      @include themed() {
-        color: t(color-link);
-      }
+      color: white;
     }
 
     &__paragraph {
@@ -68,21 +67,23 @@
       line-height: 1.5;
       letter-spacing: 1px;
       font-size: $font-size-small;
-      @include themed() {
-        color: t(color-link);
-      }
+
+      border-bottom: 1px solid white;
+      color: white;
     }
 
     &__link {
       font-size: $font-size-small;
-      @include themed() {
-        color: t(color-link);
-      }
+      color: white;
       padding: 1rem;
+
+      &:hover {
+        opacity: 0.5;
+      }
     }
   }
 
-  .show {
+  .animate-item {
     opacity: 1;
     transform: translateX(0%);
   }

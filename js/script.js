@@ -15,14 +15,13 @@ const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.classList += " show";
+        entry.target.classList += " animate-item";
         observer.unobserve(entry.target);
       }
     });
-    console.log(entries);
   },
   {
-    threshold: 0.4,
+    threshold: 0.08,
   }
 );
 
