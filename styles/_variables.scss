@@ -6,7 +6,7 @@ $font-size-medium: clamp(2rem, 3vw, 3rem);
 $font-size-small: clamp(1rem, 2vw, 2rem);
 
 $themes: (
-  light: (
+  dark: (
     color-text: rgb(23, 24, 24),
     color-link: white,
     bg-nav: rgb(23, 24, 24),
@@ -14,7 +14,7 @@ $themes: (
     slider-bg: white,
     slider: gray,
   ),
-  dark: (
+  light: (
     color-text: white,
     color-link: rgb(23, 24, 24),
     bg-nav: white,
