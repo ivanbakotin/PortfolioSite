@@ -36,7 +36,7 @@
     transform: translateX(100%);
     transition: opacity 0.3s linear, transform 0.3s linear;
 
-    &__list {
+    &__stack {
       display: flex;
       flex-wrap: wrap;
       gap: 1rem;
@@ -59,7 +59,7 @@
       color: white;
     }
 
-    &__paragraph {
+    &__description {
       padding: 1rem;
       line-height: 1.5;
       letter-spacing: 1px;
@@ -68,13 +68,19 @@
       color: white;
     }
 
-    &__link {
-      font-size: $font-size-small;
-      color: white;
-      padding: 1rem;
+    &__links {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
 
-      &:hover {
-        opacity: 0.5;
+      &__item {
+        font-size: $font-size-small;
+        color: white;
+        padding: 1rem;
+
+        &:hover {
+          opacity: 0.5;
+        }
       }
     }
   }

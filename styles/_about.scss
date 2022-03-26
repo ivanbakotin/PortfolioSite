@@ -1,7 +1,7 @@
 .about {
   display: flex;
-  padding: 5rem;
   flex-direction: column;
+  padding: 5rem;
 
   @include themed() {
     background-color: t(bg-about);

@@ -128,8 +128,8 @@ img {
 
 .about {
   display: flex;
-  padding: 5rem;
   flex-direction: column;
+  padding: 5rem;
 }
 .theme--dark .about {
   background-color: white;
@@ -223,13 +223,13 @@ img {
   transform: translateX(100%);
   transition: opacity 0.3s linear, transform 0.3s linear;
 }
-.projects__item__list {
+.projects__item__stack {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   padding: 1rem;
 }
-.projects__item__list__tech {
+.projects__item__stack__tech {
   font-size: clamp(1rem, 2vw, 2rem);
   border-radius: 1rem;
   background-color: black;
@@ -243,7 +243,7 @@ img {
   font-size: clamp(2rem, 3vw, 3rem);
   color: white;
 }
-.projects__item__paragraph {
+.projects__item__description {
   padding: 1rem;
   line-height: 1.5;
   letter-spacing: 1px;
@@ -251,12 +251,17 @@ img {
   border-bottom: 1px solid white;
   color: white;
 }
-.projects__item__link {
+.projects__item__links {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.projects__item__links__item {
   font-size: clamp(1rem, 2vw, 2rem);
   color: white;
   padding: 1rem;
 }
-.projects__item__link:hover {
+.projects__item__links__item:hover {
   opacity: 0.5;
 }
 .projects .animate-item {
