@@ -24,6 +24,10 @@ img {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 .theme--dark .nav {
   background-color: #171818;
@@ -41,7 +45,6 @@ img {
 }
 @media (max-width: 500px) {
   .nav__list {
-    z-index: 2;
     padding: 0;
     position: fixed;
     top: 0;
