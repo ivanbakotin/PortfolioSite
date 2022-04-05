@@ -42,3 +42,18 @@ const observer = new IntersectionObserver(
 projects.forEach((project) => {
   observer.observe(project);
 });
+
+const titleH1 = document.querySelector(".about__title");
+
+const h1 = "Hi, I'm Ivan";
+
+let counter = 0;
+
+const interval = setInterval(() => {
+  titleH1.textContent += h1[counter];
+  counter++;
+  if (h1.length === counter) {
+    titleH1.classList.toggle("typing");
+    clearInterval(interval);
+  }
+}, 200);

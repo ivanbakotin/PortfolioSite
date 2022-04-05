@@ -12,11 +12,28 @@
       border-bottom: 3px solid t(color-text);
     }
     margin-bottom: 2rem;
+
+    .typing {
+      animation: typing 0.5s infinite;
+    }
+
+    @keyframes typing {
+      from,
+      to {
+        border-right: 3px solid transparent;
+      }
+      50% {
+        border-right: 3px solid black;
+      }
+    }
   }
 
   &__title {
+    width: max-content;
+    padding-right: 1rem;
     letter-spacing: 1px;
     font-size: $font-size-very-large;
+
     @include themed() {
       color: t(color-text);
     }
